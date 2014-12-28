@@ -1,0 +1,29 @@
+.vitori{
+	margin: 20px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.29) 0%,rgba(0,0,0,0) 78%,rgba(0,0,0,0) 100%);
+}
+.vertical-center {
+  margin: center;
+}
+
+.margin-content {
+	position: absolute; 
+	margin:50px;
+}
+.vitori-form-elements{
+	border-radius: 0px;
+	background-color: transparent;
+}
+
+.vitori-form-elements .dropdown{
+	border: 2px;
+	border-color: #ffffff;
+	z-index: 1200;
+	color: #ffffff;
+}
+
+#main-content .btn-control{
+	width: 150px;
+	height: 150px;
+	text-align: center;
+}
