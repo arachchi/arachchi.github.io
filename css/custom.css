@@ -21,9 +21,21 @@
 	z-index: 1200;
 	color: #ffffff;
 }
+.vitori-container { position:relative; }
+.video {
+    position:absolute;
+    z-index:0;
+}
+.vitori-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
 
 #main-content .btn-control{
 	width: 150px;
 	height: 150px;
 	text-align: center;
 }
+

@@ -71,64 +71,128 @@
       </section><!-- #left-sidebar -->
       <!-- end: Left Sidebar -->
 
-      <nav class="navbar transparent navbar-fixed-top" role="navigation" >
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right" style="padding-right: 30px">
-        <li><a href="#"><i class="fa fa-bell-o"><span class="badge">2</span></i></a></li>
-        <li><a href="#">Shenal</a></li>
-        <li><img src="http://placehold.it/30x30"></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-</nav>
-      <section id="main-content" class="clearfix">
-        <article id="help" class="section-wrapper clearfix active" data-custom-background-img="assets/images/other_images/bg2.jpg">
-          <div class="content-wrapper clearfix" style="position: absolute;">               
-              <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
+      <nav class="navbar transparent navbar-fixed-top" role="navigation">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right" style="padding-right: 30px">
+            <li><a href="#"><i class="fa fa-bell-o"><span class="badge">2</span></i></a></li>
+            <li><a href="#">Shenal</a></li>
+            <li><img src="http://placehold.it/30x30"></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <section id="main-content" class="clearfix" style="margin-top:50px;" >
+        <article id="help" class="section-wrapper clearfix modified-height active" data-custom-background-img="assets/images/other_images/bg6.jpg">
+          <div class="content-wrapper clearfix" style="position: static; height: 70%;">
+
+              <div id="pay-help" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
+                <div class = "embed-responsive embed-responsive-16by9" >
+                  <video autoplay="" loop="" style="opacity:0.4; z-index:-1;" id="video">
+                    <source src="video/unnamed.mp4" type="video/mp4">
+                  </video>
+                </div>
                 <!-- Indicators - slide navigation -->
-                <ol class="carousel-indicators title-indicators">
-                  <li data-target="#features-carousel" data-slide-to="0" class="">Lorem Ipsum</li>
-                  <li data-target="#features-carousel" data-slide-to="1" class="active">Suspendisse</li>
-                  <li data-target="#features-carousel" data-slide-to="2" class="">Maecenas</li>
-                  <li data-target="#features-carousel" data-slide-to="3" class="">Scelerisque</li>
+                <ol class="carousel-indicators title-indicators" style="z-index:1000;">
+                  <li data-target="#pay-help" data-slide-to="0" class="active">Reload</li>
+                  <li data-target="#pay-help" data-slide-to="1" class="">Bill Payments</li>
+                  <li data-target="#pay-help" data-slide-to="2" class="">Ez-Cash</li>
+                  <li data-target="#pay-help" data-slide-to="3" class="">m-cash</li>
+                  <li data-target="#pay-help" data-slide-to="4" class="">paypal</li>
                 </ol>
+
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner max-height">
-                  <div class="item">
-                      <!-- 16:9 aspect ratio -->
-                    <div class="vitori">
-                      <div class="embed-responsive embed-responsive-16by9 active">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8YkbeycRa2A" frameborder="0" allowfullscreen></iframe>
-                      </div>
+                <div class="carousel-inner" style="">
+
+                  <div class="item active" style="">
+                    <div class="carousel-text-content" style="height: 414px;">
+                      <!-- <img src="assets/images/other_images/transp-image1.png" class="icon" alt="Reload">-->
+                      <h5 class="title">Reload</h5>
+                      <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
+                      <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                      <div class="content-to-populate-in-modal" id="modal-content-2">
+                        <h1>Reload</h1>
+                        <p><img data-img-src="assets/images/other_images/transp-image1.png" class="rounded_border hover_effect pull-left" alt="Lorem Ipsum" src="assets/images/other_images/transp-image1.png">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      </div><!-- #modal-content-2 -->
                     </div>
-
                   </div><!-- .item -->
 
-                   <div class="item" style="">
-                      <!-- 16:9 aspect ratio -->
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8YkbeycRa2A" frameborder="0" allowfullscreen></iframe>
-                      </div>
+                  <div class="item vitori-overlay" style="">
+                    <div class="carousel-text-content" style="height: 414px;">
+                      <!--<img src="assets/images/other_images/transp-image6.png" class="icon" alt="Lorem Ipsum">-->
+                      <h2 class="title">Bill Payments</h2>
+                      <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
+                      <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                      <div class="content-to-populate-in-modal" id="modal-content-3">
+                        <h1>Bill Payments</h1>
+                        <p><img data-img-src="assets/images/other_images/transp-image6.png" class="rounded_border hover_effect pull-left" alt="Lorem Ipsum" src="assets/images/other_images/transp-image6.png">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      </div><!-- #modal-content-3 -->
+                    </div>
                   </div><!-- .item -->
-                   <div class="item" style="">
-                      <!-- 16:9 aspect ratio -->
-                      <div class="embed-responsive embed-responsive-16by9">
-                       <iframe width="560" height="315" src="https://www.youtube.com/embed/8YkbeycRa2A" frameborder="0" allowfullscreen></iframe>
-                      </div>
+
+                  <div class="item vitori-overlay" style="">
+                    <div class="carousel-text-content" style="height: 414px;">
+                      <!--<img src="assets/images/other_images/transp-image7.png" class="icon" alt="Lorem Ipsum">-->
+                      <h2 class="title">Ez-Cash</h2>
+                      <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
+                      <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                      <div class="content-to-populate-in-modal" id="modal-content-4">
+                        <h1>Ez-Cash</h1>
+                        <p><img data-img-src="assets/images/other_images/transp-image7.png" class="rounded_border hover_effect pull-left" alt="Lorem Ipsum" src="assets/images/other_images/transp-image7.png">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      </div><!-- #modal-content-4 -->
+                    </div>
                   </div><!-- .item -->
-                   <div class="item" style="">
-                      <!-- 16:9 aspect ratio -->
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8YkbeycRa2A" frameborder="0" allowfullscreen></iframe>
-                      </div>
+
+                  <div class="item vitori-overlay" style="">
+                    <div class="carousel-text-content" style="height: 414px;">
+                      <!--<img src="assets/images/other_images/transp-image7.png" class="icon" alt="Lorem Ipsum">-->
+                      <h2 class="title">m-cash</h2>
+                      <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
+                      <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-5');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                      <div class="content-to-populate-in-modal" id="modal-content-5">
+                        <h1>m-cash</h1>
+                        <p><img data-img-src="assets/images/other_images/transp-image7.png" class="rounded_border hover_effect pull-left" alt="Lorem Ipsum" src="assets/images/other_images/transp-image7.png">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      </div><!-- #modal-content-4 -->
+                    </div>
+                  </div><!-- .item -->
+
+                  <div class="item vitori-overlay" style="">
+                    <div class="carousel-text-content" style="height: 414px;">
+                      <!--<img src="assets/images/other_images/transp-image4.png" class="icon" alt="Lorem Ipsum">-->
+                      <h2 class="title">paypal</h2>
+                      <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien. </p>
+                      <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                      <div class="content-to-populate-in-modal" id="modal-content-6">
+                        <h1>PayPal</h1>
+                        <p><img data-img-src="assets/images/other_images/transp-image4.png" class="rounded_border hover_effect pull-left" alt="Lorem Ipsum" src="assets/images/other_images/transp-image4.png">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      </div><!-- #modal-content-5 -->
+                    </div>
                   </div><!-- .item -->
                 </div><!-- .carousel-inner -->
+
                 <!-- Controls -->
-                <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
-                <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
+                <a class="left carousel-control" href="#pay-help" data-slide="prev"></a>
+                <a class="right carousel-control" href="#pay-help" data-slide="next"></a>
+
               </div><!-- #about-carousel -->
+
           </div><!-- .content-wrapper -->
-        </article><!-- .section-wrapper -->
+        </article>
       </section><!-- #main-content -->
 
       <!-- Footer -->
@@ -213,7 +277,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-48808360-1', 'stephenmuscat.com');
+      ga('create', 'UA-48808360-1', 'nuran');
       ga('require', 'displayfeatures');
       ga('send', 'pageview');
 
