@@ -61,7 +61,7 @@
         <div id="mobile-menu-icon" class="visible-xs" onclick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
 
         <ul id="main-menu">
-          <li id="menu-item-text" class="menu-item scroll"><a href="index.html">Transfer</a></li>
+          <li id="menu-item-text" class="menu-item scroll active"><a href="index.html">Transfer</a></li>
           <li id="menu-item-carousel" class="menu-item scroll"><a href="history.html">History</a></li>
           <li id="menu-item-grid" class="menu-item scroll"><a href="help.html">Help</a></li>
           <li id="menu-item-featured" class="menu-item scroll"><a href="faq.html">FAQ</a></li>
@@ -75,6 +75,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right" style="padding-right: 30px">
+            <li><a href="#"><i class="fa fa-shopping-cart"><span class="badge">0</span></i></a></li>
             <li><a href="#"><i class="fa fa-bell-o"><span class="badge">2</span></i></a></li>
             <li><a href="#">Shenal</a></li>
             <li><img src="http://placehold.it/30x30"></li>
@@ -95,72 +96,93 @@
                     <div class="item-content clearfix">
                       <span class="icon glyphicon glyphicon-stats"></span>
                       <div class="text-content">
-                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px" id="reload">Reload</p>
+                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px" id="reload">Reloads</p>
                       </div>
                       <div class="content-to-populate-in-modal" id="reload-content">
                       <h1>Reloads</h1>
-                      <div>
-
-                      <form class="form-style validate-form clearfix" action="http://stephenmuscat.com/twilli_air/1.2.2/assets/php/mail.php" method="POST" role="form">
-                    <!-- form left col -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="tel" class="text-field form-control validate-field phone required vitori-form-elements" data-validation-type="phone" id="reload-to" placeholder="To" name="to">
-                      </div>  
-                      <div class="form-group">
-                        <div class="form-controldropdown validate-field required vitori-form-elements">
-                          <button class="btn btn-sm btn-outline-inverse dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                          From
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu vitori-form-elements dropdown" role="menu" aria-labelledby="dropdownMenu1">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Credit Card</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Debit Card</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PayPal</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ez-Cash</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">m-Cash</a></li>
-                          </ul>
-                        </div>
-                      </div> 
-                    </div><!-- end: form left col -->
-
-                    <!-- form right col -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <div class="form-group">
-                          <input type="number" class="text-field form-control validate-field number required vitori-form-elements" data-validation-type="number" id="reload-amount" placeholder="Amount" name="amount">
-                        </div>  
-                 
-                      <div class="form-group">
-                        <img src="./TWILLI   Air_files/loader-form.GIF" class="form-loader">
-                        <button type="submit" class="btn btn-sm btn-outline-inverse">Submit</button>
-                      </div> 
-                      <div class="form-group form-general-error-container"></div>           
-                    </div><!-- end: form right col -->
-                  </div>
-                  </form>
-                      </div>
                       
+                        <form class="form-style validate-form clearfix" action="http://stephenmuscat.com/twilli_air/1.2.2/assets/php/mail.php" method="POST" role="form">
+                       <!-- form left col -->
+                        <div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="tel" class="text-field form-control validate-field phone required vitori-form-elements" data-validation-type="phone" id="reload-to" placeholder="Mobile Number" name="mobile_number">
+                          </div>  
+                        </div><!-- end: form left col -->
+                        <!-- form right col -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <div class="form-group">
+                              <input type="number" class="text-field form-control validate-field number required vitori-form-elements" data-validation-type="number" id="reload-amount" placeholder="Amount" name="amount">
+                            </div>   
+                            <div class="form-group form-general-error-container"></div>           
+                          </div><!-- end: form right col -->
+                        </div>
+                        </div>
 
+                        <div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Add to Cart<span class="tab"></span><i class="fa fa-shopping-cart"></i></button>
+                            </div> 
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Proceed to Payment<span class="tab"></span><i class="fa fa-forward"></i></button>
+                            </div> 
+                          </div>
+                        </div>
+                        </form>
                     </div><!-- #modal-content-7 -->
-                    
-
-                    </div><!-- end: .item-content -->
-                  </div><!-- end: .grid-item -->
+                  </div><!-- end: .item-content -->
+                </div><!-- end: .grid-item -->
 
                   <!-- grid item -->
                   <div class="grid-item col-md-6">
                     <div class="item-content clearfix">
                       <span class="icon glyphicon glyphicon-record"></span>
                       <div class="text-content">
-                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px" id="bankAccount">Bank Account</p>
+                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px" id="telephoneBill">Telephone Bills</p>
                       </div>
 
-                      <div class="content-to-populate-in-modal" id="bankAccount-content">
-                      <h1>Transfer to Bank Accounts</h1>
-                      <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
-                      <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                      <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      <div class="content-to-populate-in-modal" id="telephoneBill-content">
+                      <h1>Telephone Bills</h1>
+
+                      <form class="form-style validate-form clearfix" action="http://stephenmuscat.com/twilli_air/1.2.2/assets/php/mail.php" method="POST" role="form">
+                       <!-- form left col -->
+                        <div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="tel" class="text-field form-control validate-field phone required vitori-form-elements" data-validation-type="phone" id="reload-to" placeholder="Telephone Number" name="mobile_number">
+                          </div>  
+                        </div><!-- end: form left col -->
+                        <!-- form right col -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <div class="form-group">
+                              <input type="number" class="text-field form-control validate-field number required vitori-form-elements" data-validation-type="number" id="reload-amount" placeholder="Amount" name="amount">
+                            </div>   
+                            <div class="form-group form-general-error-container"></div>           
+                          </div><!-- end: form right col -->
+                        </div>
+                        </div>
+
+                        <div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Add to Cart<span class="tab"></span><i class="fa fa-shopping-cart"></i></button>
+                            </div> 
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Proceed to Payment<span class="tab"></span><i class="fa fa-forward"></i></button>
+                            </div> 
+                          </div>
+                        </div>
+                        </form>
+
                     </div><!-- #modal-content-7 -->
 
                     </div><!-- end: .item-content -->
@@ -171,14 +193,45 @@
                     <div class="item-content clearfix">
                       <span class="icon glyphicon glyphicon-lock"></span>
                       <div class="text-content">
-                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px" id="payPal">PayPal</p>
+                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px" id="electricityBill">Electricity Bills</p>
                       </div>
 
-                      <div class="content-to-populate-in-modal" id="payPal-content">
-                      <h1>Transfer to PayPal Account</h1>
-                      <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
-                      <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                      <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      <div class="content-to-populate-in-modal" id="electricityBill-content">
+                      <h1>Pay Electricity Bills</h1>
+
+                      <form class="form-style validate-form clearfix" action="http://stephenmuscat.com/twilli_air/1.2.2/assets/php/mail.php" method="POST" role="form">
+                       <!-- form left col -->
+                        <div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="tel" class="text-field form-control validate-field phone required vitori-form-elements" data-validation-type="phone" id="reload-to" placeholder="Mobile Number" name="mobile_number">
+                          </div>  
+                        </div><!-- end: form left col -->
+                        <!-- form right col -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <div class="form-group">
+                              <input type="number" class="text-field form-control validate-field number required vitori-form-elements" data-validation-type="number" id="reload-amount" placeholder="Amount" name="amount">
+                            </div>   
+                            <div class="form-group form-general-error-container"></div>           
+                          </div><!-- end: form right col -->
+                        </div>
+                        </div>
+
+                        <div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Add to Cart<span class="tab"></span><i class="fa fa-shopping-cart"></i></button>
+                            </div> 
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Proceed to Payment<span class="tab"></span><i class="fa fa-forward"></i></button>
+                            </div> 
+                          </div>
+                        </div>
+                        </form>
                     </div><!-- #modal-content-7 -->
 
                     </div><!-- end: .item-content -->
@@ -189,14 +242,46 @@
                     <div class="item-content clearfix">
                       <span class="icon glyphicon glyphicon-file"></span>
                       <div class="text-content">
-                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px" id="waterBill">Water Bill</p>
+                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px" id="waterBill">Water Bills</p>
                       </div>
 
                       <div class="content-to-populate-in-modal" id="waterBill-content">
-                      <h1>Transfer to Water Bill</h1>
-                      <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
-                      <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                      <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      <h1>Pay Water Bills</h1>
+
+                      <form class="form-style validate-form clearfix" action="http://stephenmuscat.com/twilli_air/1.2.2/assets/php/mail.php" method="POST" role="form">
+                       <!-- form left col -->
+                        <div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="tel" class="text-field form-control validate-field phone required vitori-form-elements" data-validation-type="phone" id="reload-to" placeholder="Account Number" name="account_number">
+                          </div>  
+                        </div><!-- end: form left col -->
+                        <!-- form right col -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <div class="form-group">
+                              <input type="number" class="text-field form-control validate-field number required vitori-form-elements" data-validation-type="number" id="reload-amount" placeholder="Amount" name="amount">
+                            </div>   
+                            <div class="form-group form-general-error-container"></div>           
+                          </div><!-- end: form right col -->
+                        </div>
+                        </div>
+
+                        <div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Add to Cart<span class="tab"></span><i class="fa fa-shopping-cart"></i></button>
+                            </div> 
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Proceed to Payment<span class="tab"></span><i class="fa fa-forward"></i></button>
+                            </div> 
+                          </div>
+                        </div>
+                        </form>
+
                     </div><!-- #modal-content-7 -->
 
                     </div><!-- end: .item-content -->
@@ -207,14 +292,45 @@
                     <div class="item-content clearfix">
                       <span class="icon glyphicon glyphicon-lock"></span>
                       <div class="text-content">
-                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px" id="currentBill">Current Bill</p>
+                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px" id="bankAccount">Bank Transfers</p>
                       </div>
 
-                      <div class="content-to-populate-in-modal" id="currentBill-content">
-                      <h1>Transfer to Current Bill</h1>
-                      <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
-                      <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                      <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      <div class="content-to-populate-in-modal" id="bankAccount-content">
+                      <h1>Transfer to Bank Account</h1>
+
+                      <form class="form-style validate-form clearfix" action="http://stephenmuscat.com/twilli_air/1.2.2/assets/php/mail.php" method="POST" role="form">
+                       <!-- form left col -->
+                        <div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="tel" class="text-field form-control validate-field phone required vitori-form-elements" data-validation-type="phone" id="reload-to" placeholder="Account Number" name="account_number">
+                          </div>  
+                        </div><!-- end: form left col -->
+                        <!-- form right col -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <div class="form-group">
+                              <input type="number" class="text-field form-control validate-field number required vitori-form-elements" data-validation-type="number" id="reload-amount" placeholder="Amount" name="amount">
+                            </div>   
+                            <div class="form-group form-general-error-container"></div>           
+                          </div><!-- end: form right col -->
+                        </div>
+                        </div>
+
+                        <div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Add to Cart<span class="tab"></span><i class="fa fa-shopping-cart"></i></button>
+                            </div> 
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Proceed to Payment<span class="tab"></span><i class="fa fa-forward"></i></button>
+                            </div> 
+                          </div>
+                        </div>
+                        </form>
                     </div><!-- #modal-content-7 -->
 
                     </div><!-- end: .item-content -->
@@ -225,14 +341,45 @@
                     <div class="item-content clearfix">
                       <span class="icon glyphicon glyphicon-file"></span>
                       <div class="text-content">
-                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px"id="otherBills">Other Bills</p>
+                        <p class ="btn btn-lg btn-outline-inverse btn-control" style="height=200px width=200px"id="payPal">PayPal</p>
                       </div>
 
-                      <div class="content-to-populate-in-modal" id="otherBill-content">
-                      <h1>Transfer to Other Bills</h1>
-                      <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
-                      <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                      <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      <div class="content-to-populate-in-modal" id="payPal-content">
+                      <h1>Transfer to PayPal</h1>
+
+                      <form class="form-style validate-form clearfix" action="http://stephenmuscat.com/twilli_air/1.2.2/assets/php/mail.php" method="POST" role="form">
+                       <!-- form left col -->
+                        <div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="tel" class="text-field form-control validate-field phone required vitori-form-elements" data-validation-type="phone" id="reload-to" placeholder="Account Number" name="account_number">
+                          </div>  
+                        </div><!-- end: form left col -->
+                        <!-- form right col -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <div class="form-group">
+                              <input type="number" class="text-field form-control validate-field number required vitori-form-elements" data-validation-type="number" id="reload-amount" placeholder="Amount" name="amount">
+                            </div>   
+                            <div class="form-group form-general-error-container"></div>           
+                          </div><!-- end: form right col -->
+                        </div>
+                        </div>
+
+                        <div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Add to Cart<span class="tab"></span><i class="fa fa-shopping-cart"></i></button>
+                            </div> 
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-sm btn-outline-inverse form-control">Proceed to Payment<span class="tab"></span><i class="fa fa-forward"></i></button>
+                            </div> 
+                          </div>
+                        </div>
+                        </form>
                     </div><!-- #modal-content-7 -->
 
                     </div><!-- end: .item-content -->

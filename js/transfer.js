@@ -12,24 +12,24 @@ function transferControl(){
 		populate_and_open_modal(event, 'payPal-content');
 	};
 
-	var currentBillPayments = function(){
-		populate_and_open_modal(event, 'waterBill-content');
+	var electricityBillPayments = function(){
+		populate_and_open_modal(event, 'electricityBill-content');
 	};
 
 	var waterBillPayments =function(){
-		populate_and_open_modal(event, 'currentBill-content');
+		populate_and_open_modal(event, 'waterBill-content');
 	};
 
-	var otherBillPayments = function(){
-		populate_and_open_modal(event, 'otherBill-content');
+	var telephoneBillPayments = function(){
+		populate_and_open_modal(event, 'telephoneBill-content');
 	};
 
 	$("#reload").on("click",reload);
 	$("#bankAccount").on("click",bankTransfers);
 	$("#payPal").on("click",payPalPayments);
-	$("#currentBill").on("click",currentBillPayments);
+	$("#electricityBill").on("click",electricityBillPayments);
 	$("#waterBill").on("click",waterBillPayments);
-	$("#otherBills").on("click",otherBillPayments);
+	$("#telephoneBill").on("click",telephoneBillPayments);
 }
 
 
