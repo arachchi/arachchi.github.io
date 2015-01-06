@@ -24,12 +24,19 @@ function transferControl(){
 		populate_and_open_modal(event, 'telephoneBill-content');
 	};
 
+	var cart = function(){
+		$('#reload').modal('hide');
+		populate_and_open_modal(event, 'cart-content');
+	};
+
 	$("#reload").on("click",reload);
 	$("#bankAccount").on("click",bankTransfers);
 	$("#payPal").on("click",payPalPayments);
 	$("#electricityBill").on("click",electricityBillPayments);
 	$("#waterBill").on("click",waterBillPayments);
 	$("#telephoneBill").on("click",telephoneBillPayments);
+
+	$("#nuran").on("click",cart);
 }
 
 
